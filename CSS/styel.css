@@ -1256,8 +1256,8 @@ margin: 25px 0 0px;
   
 
     .banner_text h2 {
-        font-size: 35px;
-        line-height: 50px;
+        font-size: 30px;
+        line-height: 35px;
         margin-top: 25px;
     }
 
@@ -1277,9 +1277,11 @@ margin: 25px 0 0px;
     }
 
     .banner_text p {
-        font-size: 20px;
+        font-size: 13px;
         line-height: 25px;
         margin-bottom: 20px;
+        margin-top: 10px;
+        width: 100%;
     }
     .portfolio .text h3 {
         font-size: 22px;
