@@ -64,7 +64,9 @@ header{
     background-size: 60%;
     padding-bottom: 30px;
 }
-
+.navbar-expand-lg .navbar-nav { 
+    align-items: center;
+}
 
 button:focus:not(:focus-visible) {
     display: none;
