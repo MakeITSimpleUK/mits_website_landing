@@ -1109,8 +1109,8 @@ margin: 25px 0 0px;
     bottom: -00px;
     display: block;
 }
-.about_images { 
-    margin-bottom: 60px;
+.about_images {
+    margin-bottom: 30px;
 }
 .work_section .row {
     flex-direction: column;
@@ -1167,8 +1167,8 @@ margin: 25px 0 0px;
       
     }
     .logo_images {
-        max-width: 100px;
-        margin: 15px;
+        max-width: 70px;
+        margin: 0 15px 0 0;
     }
     .about {
         display: flex;
@@ -1224,7 +1224,7 @@ margin: 25px 0 0px;
     }
 
     .mobile {
-        width: 150%;
+        width: 100%;
     }
     .line1 {
         display: none;
@@ -1301,11 +1301,12 @@ margin: 25px 0 0px;
     }
     .line_about_right {
       
-        right: 0px;
-        bottom: 0px;
+right: -4px;
+      
+bottom: -6px;
     }
     .about_images {
-        padding: 0px 0px 20px 0px;
+        padding: 0px 18px 0px 0px;
     }
     
    
@@ -1420,13 +1421,14 @@ margin: 25px 0 0px;
     }
     header{
         background-size: 0% !important;
-        margin-bottom: 40px;
+        margin-bottom: 200px;
     }
     .phone {
-        left: 65%;
-        bottom: -25%;
-        transform: translate(-65% , 25%);
+        left: 70%;
+        bottom: 20%;
+        transform: translate(-70% , 20%);
         padding: 15px;
+        width: 100%;
     }
     .footer_tex p {
     margin: 25px 0 0px;
