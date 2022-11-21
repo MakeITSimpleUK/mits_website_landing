@@ -1435,5 +1435,9 @@ bottom: -6px;
     .footer_tex p {
     margin: 25px 0 0px;
 }
+.navbar-toggler { 
+    position: relative;
+    z-index: 99999;
+}
 }
  
