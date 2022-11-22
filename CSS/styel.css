@@ -121,7 +121,8 @@ button:focus:not(:focus-visible) {
     color: var(---balck);
     vertical-align: middle;
     font-size: 20px;
-    margin-left: 5px;
+    margin-left: 5px; 
+    margin-top: 7px;
 }
 
 .coustom_btn:hover  span{
