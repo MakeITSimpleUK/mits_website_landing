@@ -61,8 +61,8 @@ header{
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    background-size: 60%;
     padding-bottom: 30px;
+    background-size: contain;
 }
 .navbar-expand-lg .navbar-nav { 
     align-items: center;
@@ -94,7 +94,9 @@ button:focus:not(:focus-visible) {
     width: 200px;
     height: 30px;
 }
-
+.banner_text{
+    margin-top: 40px;
+}
 
 .banner_text h2{
     font-family: var(---DM_sans_font);
@@ -150,12 +152,14 @@ button:focus:not(:focus-visible) {
 
 .banner_images{
     position: relative;
+    margin-top: 40px;
+    padding-left: 0;
 }
 .right_images {
     width: 90%;
-    top: -10px;
-    right: -50px;
-    transform: translate( 50px ,-5px);
+    top: 0;
+    right: 0;
+    transform: translate( 0 ,0);
 }
 
 
@@ -170,9 +174,9 @@ button:focus:not(:focus-visible) {
     z-index: 1;
     padding: 25px;
     max-width: 250px;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50% , -25%);
+    left: -20px;
+    top: 80px;
+    transform: translate(0% , 0%);
 }
 
 
@@ -193,15 +197,15 @@ button:focus:not(:focus-visible) {
 .sms{
     display: flex;
     position: absolute;
-    top: 42%;
+    bottom: 105px;
     z-index: 10;
     align-items: flex-end;
-    left: 45%;
-    transform: translate(-45%, -42%);
+    left: -85px;
+    transform: translate(0, 0);
 }
 
 .sms_text{
-    width: 225px;
+    width: 245px;
     height: 115px;
     padding: 10px;
     background-color: var(---with);
@@ -848,11 +852,10 @@ footer{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: var(---gray_dark);
+    color: var(---active);
     width: 150px;
-    margin-top: 30px;
-    
-
+    margin-top: 15px;
+    opacity: 0.7;
 }
 
 .footer_logo_images{
@@ -873,14 +876,25 @@ footer{
     font-size: 14px;
     line-height: 24px;
     color: var(---gray_dark);
+    opacity: 0.7;
 }
 .footer_tex  ul li a:hover{
     color: var(---active_2);
 }
 
 /*=========*** footer***===========*/
+.copyright.phoneView{
+    display: none;
+}
+.copyright{
+color: var(---gray_dark) !important;
+margin-top: 50px !important;
+opacity: 0.5 !important;
+}
+.findus p{
+color: var(---gray_dark) !important;
 
-
+}
 /*======================================  max-widh  1199px ==================*/
 
 
@@ -924,9 +938,7 @@ footer{
     
 margin: 25px 0 0px;
  }
- footer {
-   text-align: center;
- }
+
  
 
 .phone {
@@ -1005,6 +1017,12 @@ margin: 25px 0 0px;
 /*======================================  max-widh  991px ==================*/
 
 @media(max-width:991px){
+    .navbar-toggler{ 
+        border: 0;
+    }
+    .navbar-toggler .navbar-toggler-icon { 
+        filter: brightness(0) invert(1);
+    }
     .row.about {
     flex-direction: column-reverse;
 }
@@ -1022,26 +1040,30 @@ margin: 25px 0 0px;
 
 
     .phone {
-        width: 150px;
-        left: 55%;
+        width: 250px;
+        left: auto;
+        right: 0;
         top: 35%;
-        transform: translate(-55% , -35%);
+        transform: translate(0% , -35%);
         padding: 15px;
     }
     .line1 {
         width: 40px;
     }
     .sms {
-        top: 48%;
-        left: 55%;
-        width: 50%;
-        transform: translate(-55%, -48%);
+        bottom: 100px;
+        left: auto;
+        width: 100%;
+        right: -60px;
         display: flex;
         flex-direction: row-reverse;
+        transform: translate(0%, 0%);
     }
 
     .sms_text {
         margin-right: 10px;
+        width: 245px;
+        height: auto;
     }
 
     .logo_images {
@@ -1065,10 +1087,10 @@ margin: 25px 0 0px;
         padding: 8px 12px;
     }
     header {
-        background-image: url(../images/bg\ figure.png) ;
+        background-image: url(../images/bg\ figure.png);
         background-repeat: no-repeat;
         background-position-x: right;
-        background-size: 60%;
+        background-size: contain;
     }
 
     .about_text h3 {
@@ -1117,12 +1139,27 @@ margin: 25px 0 0px;
 .work_section .row {
     flex-direction: column;
 }
+.container, .container-md, .container-sm {
+    max-width: 100%;
+    padding: 0 50px;
+}
+.banner_images {
+    padding-left: 0;
+    padding-right: 100px;
+}
+.line2 { 
+    display: none;
+}
 }
 
 
 /*======================================  max-widh  767px ==================*/
 @media(max-width:767px){
 
+
+.line2 { 
+    display: block;
+}
    
     .navbar-expand-lg .navbar-nav .nav-link{
         padding: 6px 20px !important;}
@@ -1132,7 +1169,7 @@ margin: 25px 0 0px;
         background-image: url(../images/bg\ figure.png);
         background-repeat: no-repeat;
         background-position-x: right;
-        background-size: 40%;
+        background-size: contain;
     }
 
 
@@ -1149,7 +1186,7 @@ margin: 25px 0 0px;
   
 
     .banner_text{
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     .banner_text h2 {
         font-size: 45px;
@@ -1219,11 +1256,9 @@ margin: 25px 0 0px;
         margin-bottom: 20px;
     }
     .phone {
-        left: 60%;
-        bottom: -35%;
-        transform: translate(-60% , 35%);
-        padding: 15px;
-    }
+        right: 40px;
+         
+    } 
 
     .mobile {
         width: 100%;
@@ -1234,14 +1269,14 @@ margin: 25px 0 0px;
     .line2 {
         display: none;
     }
-    .sms {
+    /*.sms {
         bottom: -15%;
         left: 75%;
         width: 50%;
         transform: translate(-75%, 15%);
         display: flex;
         flex-direction: row-reverse;
-    }
+    }*/
     .banner_text h2 {
         font-size: 44px;
         line-height: 60px;
@@ -1253,8 +1288,16 @@ margin: 25px 0 0px;
 /*======================================  max-widh  575px ==================*/
 
  @media(max-width:575px){
-   
-
+         footer {
+   text-align: center;
+ }
+   .banner_images {
+    padding-left: 0;
+    padding-right: 0;
+}
+    .navbar-toggler .navbar-toggler-icon { 
+        filter: brightness(0) invert(0);
+    }
   
 
     .banner_text h2 {
@@ -1264,13 +1307,15 @@ margin: 25px 0 0px;
     }
 
     .sms {
-        bottom: -30%;
-        left: 5%;
-        width: 75%;
-        transform: translate(5%, -30%);
-        display: flex;
-        flex-direction: revert;
-    }
+    bottom: 0;
+    left: -100px;
+    width: 300px;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-direction: revert;
+    right: auto;
+    top: auto;
+}
 
     .sms_text {
         height: 142px;
@@ -1425,12 +1470,15 @@ bottom: -6px;
         background-size: 0% !important;
         margin-bottom: 200px;
     }
-    .phone {
-    left: 70%;
-    bottom: 30%;
-    transform: translate(-70% , 30%);
+   .phone {
+    left: auto;
+    bottom: auto;
+    transform: translate(0 , 0%);
     padding: 15px;
     width: 100%;
+    right: 20px;
+    height: 100%;
+    top: -30px;
 }
     .footer_tex p {
     margin: 25px 0 0px;
@@ -1438,6 +1486,17 @@ bottom: -6px;
 .navbar-toggler { 
     position: relative;
     z-index: 99999;
+}
+.container, .container-md, .container-sm {
+    
+    padding: 0 15px;
+}
+.copyright {
+     display: none;
+}
+.copyright.phoneView{
+    display: block !important;
+    margin-top: 0 !important;
 }
 }
  
