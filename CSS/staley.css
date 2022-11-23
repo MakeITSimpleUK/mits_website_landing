@@ -146,7 +146,19 @@ button:focus:not(:focus-visible) {
     display: none;
 }
 
-
+.navbar{
+    transition-duration: 0.5s;
+    position: fixed;
+    width: 100%;
+}
+.navbar.fixed-top{
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 2px 30px -2px #aaa;
+}
+.navbar.fixed-top  .nav-link { 
+    color: var(---balck);
+}
 .navbar-nav .nav-link, .navbar-nav .show>.nav-link {
     margin-right: 10px;
     font-family: var(---DM_sans_font);
@@ -172,7 +184,7 @@ button:focus:not(:focus-visible) {
     height: 30px;
 }
 .banner_text{
-    margin-top: 40px;
+    margin-top: 130px;
 }
 
 .banner_text h2{
@@ -235,7 +247,7 @@ button:focus:not(:focus-visible) {
 
 .banner_images{
     position: relative;
-    margin-top: 40px;
+    margin-top: 130px;
     padding-left: 0;
 }
 .right_images {
@@ -1102,6 +1114,9 @@ margin: 25px 0 0px;
     .navbar-toggler .navbar-toggler-icon { 
         filter: brightness(0) invert(1);
     }
+    .fixed-top .navbar-toggler .navbar-toggler-icon { 
+        filter: brightness(0) invert(0);
+    }
     .row.about {
     flex-direction: column-reverse;
 }
@@ -1405,6 +1420,7 @@ nav.navbar{
    .banner_images {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 40px;
 }
     .navbar-toggler .navbar-toggler-icon { 
         filter: brightness(0) invert(0);

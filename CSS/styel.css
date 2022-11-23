@@ -88,7 +88,15 @@ button:focus:not(:focus-visible) {
 
 }
 
-
+.navbar{
+    transition-duration: 0.5s;
+}
+.navbar.fixed-top{
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    width: 100%;
+}
 
 .menu_logo{
     width: 200px;
