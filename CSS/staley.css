@@ -1180,13 +1180,13 @@ margin: 25px 0 0px;
     .coustom_btn {
         padding: 8px 12px;
     }
-    header {
-        background-image: url(../images/bg\ figure.png);
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-size: contain;
-    }
-
+ 
+header {
+    background-image: url(../images/bg\ figure.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 31% 100%;
+}
     .about_text h3 {
         font-size: 30px;
         line-height: 35px;
